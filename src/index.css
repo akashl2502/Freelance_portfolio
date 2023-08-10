@@ -32,3 +32,9 @@
   background: #f87c44;
 }
 
+@media only screen and (max-width: 767px) {
+  [data-aos] {
+    opacity: 1 !important; /* Override AOS styles to show the element */
+    transform: none !important; /* Reset any translations, scales, etc. */
+  }
+}

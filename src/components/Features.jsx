@@ -74,7 +74,7 @@ const Features = () => {
             {features.slice(0, 3).map((item) => {
               return (
                 <div
-                  data-aos="slide-right"
+                  data-aos="zoom-in-right"
                   data-aos-offset="200"
                   data-aos-easing="ease-in-sine"
                   data-aos-duration="600"
@@ -105,11 +105,11 @@ const Features = () => {
               src="https://img.freepik.com/free-vector/features-overview-concept-illustration_114360-1500.jpg?w=740&t=st=1691499633~exp=1691500233~hmac=4884f9c96d42d4d8ccbdee7bc3e4c07b42dc54069a68f02c0c3033f2ea09a22b"
             />
           </div>
-          <div className="flex flex-col gap-9 overflow-hidden">
+          <div className="flex flex-col gap-9">
             {features.slice(3, 7).map((item) => {
               return (
                 <div
-                  data-aos="slide-left"
+                  data-aos="zoom-in-left"
                   data-aos-offset="200"
                   data-aos-easing="ease-in-sine"
                   data-aos-duration="600"
