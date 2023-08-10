@@ -6,7 +6,12 @@ const Contact = () => {
       <div className="flex container mx-auto justify-center items-center h-full">
         <div className="h-[600px] w-[850px] bg-white ">
           <div className="h-[10%] w-full pt-24 flex justify-center items-center flex-col">
-            <p className="text-[2.5rem] mfont font-light uppercase tracking-widest max-sm:text-[2rem]">
+            <p
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
+              className="text-[2.5rem] mfont font-light uppercase tracking-widest max-sm:text-[2rem]">
               <span>Contact</span> <span className="text-[#f87c44]">Us</span>
             </p>
             <div className="flex justify-center items-center ">
@@ -20,18 +25,30 @@ const Contact = () => {
           <div className="flex flex-col gap-10 w-full justify-center items-center h-[90%] ">
             <div className="w-[80%]">
               <input
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600"
                 className="border rounded-lg w-full py-4 px-10 border-gray-300"
                 placeholder="Your Name"
               />
             </div>
             <div className="w-[80%]">
               <input
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600"
                 className="border rounded-lg w-full py-4 px-10 border-gray-300"
                 placeholder="Email ID"
               />
             </div>
             <div className="w-[80%]">
               <textarea
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="600"
                 className="border rounded-lg w-full py-4 px-10 border-gray-300"
                 placeholder="Message"
               />

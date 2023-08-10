@@ -8,7 +8,12 @@ export const Team = () => {
   return (
     <section id="team" className="h-screen pt-5 max-sm:pt-10 ">
       <div className="h-[10%] container mx-auto w-full pt-24 flex justify-center items-center flex-col gap-1">
-        <p className="text-[2.9rem] mfont font-light uppercase tracking-widest max-sm:text-[2rem]">
+        <p
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+          className="text-[2.9rem] mfont font-light uppercase tracking-widest max-sm:text-[2rem]">
           <span>Our</span> <span className="text-[#f87c44]">TEAM</span>
         </p>
         <div className="flex justify-center items-center ">
@@ -27,7 +32,12 @@ export const Team = () => {
           </p>
         </div>
       </div>
-      <div className="h-full flex justify-center items-center">
+      <div
+        data-aos="slide-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+        className="h-full flex justify-center items-center">
         {" "}
         <Swiper
           effect={"cards"}

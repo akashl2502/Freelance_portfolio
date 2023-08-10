@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Link } from "react-scroll";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -29,9 +30,21 @@ function Hero() {
               Website or Landing Page
             </p>
             <div className="absolute font-light mfont top-0 left-0 bottom-0 right-0 flex items-end w-full justify-center h-[85%] ">
-              <button className="px-8 text-white text-bold py-2 border-2 border-white hover:bg-[#f87c44] hover:transition-all hover:ease-in-out hover:duration-700">
-                Get Started ! !
-              </button>
+              <Link
+                className="inline-block py-2 px-4 text-gray-600 no-underline cursor-pointer "
+                spy={true}
+                to="contact"
+                smooth={true}
+                hashSpy={true}
+                offset={50}
+                duration={500}
+                isDynamic={true}
+                ignoreCancelEvents={false}
+                spyThrottle={500}>
+                <button className="px-8 text-white text-bold py-2 border-2 border-white hover:bg-[#f87c44] hover:transition-all hover:ease-in-out hover:duration-700">
+                  Get Started ! !
+                </button>
+              </Link>
             </div>
           </div>
         </SwiperSlide>
@@ -44,9 +57,21 @@ function Hero() {
               Impressed With Crystal
             </p>
             <div className="absolute font-light mfont top-0 left-0 bottom-0 right-0 flex items-end w-full justify-center h-[85%] ">
-              <button className="px-8 text-white text-bold py-2 border-2 border-white hover:bg-[#f87c44] hover:transition-all hover:ease-in-out hover:duration-700">
-                Our Services
-              </button>
+              <Link
+                className="inline-block py-2 px-4 text-gray-600 no-underline cursor-pointer"
+                spy={true}
+                to="service"
+                smooth={true}
+                hashSpy={true}
+                offset={50}
+                duration={500}
+                isDynamic={true}
+                ignoreCancelEvents={false}
+                spyThrottle={500}>
+                <button className="px-8 text-white text-bold py-2 border-2 border-white hover:bg-[#f87c44] hover:transition-all hover:ease-in-out hover:duration-700">
+                  Our Services
+                </button>
+              </Link>
             </div>
           </div>
         </SwiperSlide>
@@ -58,9 +83,21 @@ function Hero() {
               Create Tailwind Powered <br /> Website in Minutes
             </p>
             <div className="absolute font-light mfont top-0 left-0 bottom-0 right-0 flex items-end w-full justify-center h-[85%] ">
-              <button className="px-8 text-white text-bold py-2 border-2 border-white hover:bg-[#f87c44] hover:transition-all hover:ease-in-out hover:duration-700">
-                Our Features
-              </button>
+              <Link
+                className="inline-block py-2 px-4 text-gray-600 no-underline cursor-pointer"
+                spy={true}
+                to="feature"
+                smooth={true}
+                hashSpy={true}
+                offset={50}
+                duration={500}
+                isDynamic={true}
+                ignoreCancelEvents={false}
+                spyThrottle={500}>
+                <button className="px-8 text-white text-bold py-2 border-2 border-white hover:bg-[#f87c44] hover:transition-all hover:ease-in-out hover:duration-700">
+                  Our Features
+                </button>
+              </Link>
             </div>
           </div>
         </SwiperSlide>
@@ -73,9 +110,21 @@ function Hero() {
               Get to Know Our Crystal Team
             </p>
             <div className="absolute font-light mfont top-0 left-0 bottom-0 right-0 flex items-end w-full justify-center h-[85%] ">
-              <button className="px-8 text-white text-bold py-2 border-2 border-white hover:bg-[#f87c44] hover:transition-all hover:ease-in-out hover:duration-700">
-                Our Team
-              </button>
+              <Link
+                className="inline-block py-2 px-4 text-gray-600 no-underline cursor-pointer hover:text-black underline-animation"
+                spy={true}
+                to="team"
+                smooth={true}
+                hashSpy={true}
+                offset={50}
+                duration={500}
+                isDynamic={true}
+                ignoreCancelEvents={false}
+                spyThrottle={500}>
+                <button className="px-8 text-white text-bold py-2 border-2 border-white hover:bg-[#f87c44] hover:transition-all hover:ease-in-out hover:duration-700">
+                  Our Team
+                </button>
+              </Link>
             </div>
           </div>
         </SwiperSlide>

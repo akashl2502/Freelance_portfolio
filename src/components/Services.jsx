@@ -49,7 +49,12 @@ export default function Services() {
   return (
     <section id="service" className="h-screen w-full max-sm:overflow-auto">
       <div className="h-[10%] container mx-auto w-full flex justify-center items-center flex-col gap-1 max-sm:h-[20%]">
-        <p className="text-[2.9rem] mfont font-light uppercase tracking-widest max-sm:text-[2rem]">
+        <p
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+          className="text-[2.9rem] mfont font-light uppercase tracking-widest max-sm:text-[2rem]">
           <span>Our</span> <span className="text-[#f87c44]">Services</span>
         </p>
         <div className="flex justify-center items-center ">
@@ -66,7 +71,12 @@ export default function Services() {
       <div className="h-[100%] mt-12 w-full grid md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-4 max-sm:h-full max-sm:mt-0">
         {arr.map((item) => {
           return (
-            <div className="h-[300px]  w-full flex justify-center items-center flex-col gap-5 hover:bg-white hover:shadow-xl hover:rounded-xl">
+            <div
+              data-aos="fade-zoom-in"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
+              className="h-[300px]  w-full flex justify-center items-center flex-col gap-5 hover:bg-white hover:shadow-xl hover:rounded-xl">
               <div className="h-[80px] w-[80px] border border-[#f87c44] rounded-xl flex justify-center items-center">
                 {item.icon}
               </div>

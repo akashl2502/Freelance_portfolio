@@ -47,7 +47,12 @@ const Features = () => {
   return (
     <section id="feature" className="h-screen mt-40 w-full max-sm:mt-0">
       <div className="h-full container mx-auto flex flex-col justify-center items-center">
-        <p className="text-[2.1rem] mfont font-light uppercase tracking-widest max-sm:text-[1.5rem] ">
+        <p
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+          className="text-[2.1rem] mfont font-light uppercase tracking-widest max-sm:text-[1.5rem] ">
           <span>Amazing</span>
           <span className="text-[#f87c44] pl-5">Features</span>
         </p>
@@ -68,7 +73,12 @@ const Features = () => {
           <div className="flex flex-col gap-9">
             {features.slice(0, 3).map((item) => {
               return (
-                <div className="flex justify-center items-center gap-6">
+                <div
+                  data-aos="slide-right"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="600"
+                  className="flex justify-center items-center gap-6">
                   <div className="flex flex-col gap-3  ">
                     <div className=" text-right">
                       <p className="font-bold text-[1.3rem] sub tracking-widest uppercase">
@@ -89,16 +99,21 @@ const Features = () => {
             })}
           </div>
 
-          <div className="h-full w-full flex justify-center items-center max-sm:hidden">
+          <div className="h-full  w-full flex justify-center items-center max-sm:hidden">
             <img
               className="h-[300px] w-[300px] mix-blend-color-burn"
               src="https://img.freepik.com/free-vector/features-overview-concept-illustration_114360-1500.jpg?w=740&t=st=1691499633~exp=1691500233~hmac=4884f9c96d42d4d8ccbdee7bc3e4c07b42dc54069a68f02c0c3033f2ea09a22b"
             />
           </div>
-          <div className="flex flex-col gap-9">
+          <div className="flex flex-col gap-9 overflow-hidden">
             {features.slice(3, 7).map((item) => {
               return (
-                <div className="flex flex-row-reverse justify-center items-center gap-6">
+                <div
+                  data-aos="slide-left"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="600"
+                  className="flex flex-row-reverse justify-center items-center gap-6 ">
                   <div className="flex flex-col gap-3  ">
                     <div className=" text-left">
                       <p className="font-bold text-[1.3rem] sub tracking-widest uppercase">
