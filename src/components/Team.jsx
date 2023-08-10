@@ -4,6 +4,10 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import { EffectCards, Autoplay } from "swiper/modules";
 import "../styles/card.css";
+import prasath from "../assets/avatar1.jpg";
+import akash from "../assets/avatar2.jpg";
+import krithic from "../assets/avatar3.jpg";
+import aswath from "../assets/avatar4.jpg";
 export const Team = () => {
   return (
     <section id="team" className="h-screen pt-5 max-sm:pt-10 ">
@@ -52,16 +56,16 @@ export const Team = () => {
             {" "}
             <div className="relative w-full h-full">
               <img
-                src="https://img.freepik.com/premium-photo/fun-asian-teenager-animation_183364-11872.jpg?w=740"
+                src={prasath}
                 alt="Example"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-x-0 bottom-0 pb-7 bg-black bg-opacity-50 gap-5 flex-col flex items-center justify-center">
                 <p className="text-white text-xl font-extrabold mfont pt-5">
-                  Prasath S
+                  Prasath
                 </p>
                 <p className="text-white text-sm font-[600] tracking-wider sub">
-                  Full Stack Web Developer
+                  Web AI Architect
                 </p>
               </div>
             </div>
@@ -70,16 +74,52 @@ export const Team = () => {
             {" "}
             <div className="relative w-full h-full">
               <img
-                src="https://img.freepik.com/premium-photo/fun-3d-illustration-american-referee_183364-90554.jpg?w=740"
+                src={akash}
                 alt="Example"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-x-0 bottom-0 pb-7 bg-black bg-opacity-50 gap-5 flex-col flex items-center justify-center">
                 <p className="text-white text-xl font-extrabold mfont pt-5">
-                  Akash L
+                  Akash
                 </p>
                 <p className="text-white text-sm font-[600] tracking-wider sub">
-                  Full Stack Web Developer
+                  Web AI Architect
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <div className="relative w-full h-full">
+              <img
+                src={krithic}
+                alt="Example"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-x-0 bottom-0 pb-7 bg-black bg-opacity-50 gap-5 flex-col flex items-center justify-center">
+                <p className="text-white text-xl font-extrabold mfont pt-5">
+                  Krithicswaroopan
+                </p>
+                <p className="text-white text-sm font-[600] tracking-wider sub">
+                  AI Architect
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <div className="relative w-full h-full">
+              <img
+                src={aswath}
+                alt="Example"
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-x-0 bottom-0 pb-7 bg-black bg-opacity-50 gap-5 flex-col flex items-center justify-center">
+                <p className="text-white text-xl font-extrabold mfont pt-5">
+                  Ashwath
+                </p>
+                <p className="text-white text-sm font-[600] tracking-wider sub">
+                  AI Trainee
                 </p>
               </div>
             </div>

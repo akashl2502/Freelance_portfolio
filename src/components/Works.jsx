@@ -9,7 +9,7 @@ export const Works = () => {
     {
       all: [
         "https://img.freepik.com/free-vector/workout-tracker-app-interface_23-2148653679.jpg?w=1060&t=st=1691502912~exp=1691503512~hmac=c7fe6bd30bfb48175beed08a8322bb5160f3561ec04c1ce08a5e55f0c6142942",
-        "https://img.freepik.com/premium-vector/www-icon_23-2147929410.jpg?w=740",
+        "https://img.freepik.com/premium-vector/hypertext-transfer-protocol-concept-http-data-web-page-web-browser-internet-communication-protocol-3d-vector-icon-cartoon-minimal-style_365941-790.jpg?w=740",
       ],
     },
     {
@@ -19,7 +19,7 @@ export const Works = () => {
     },
     {
       webs: [
-        "https://img.freepik.com/premium-vector/www-icon_23-2147929410.jpg?w=740",
+        "https://img.freepik.com/premium-vector/hypertext-transfer-protocol-concept-http-data-web-page-web-browser-internet-communication-protocol-3d-vector-icon-cartoon-minimal-style_365941-790.jpg?w=740",
       ],
     },
   ];
