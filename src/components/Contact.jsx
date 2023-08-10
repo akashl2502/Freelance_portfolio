@@ -93,7 +93,7 @@ const Contact = () => {
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600"
                 className="border rounded-lg w-full py-4 px-10 border-gray-300"
-                placeholder="Email ID"
+                placeholder="Your Email ID"
                 name="email"
                 value={forms.email}
                 onChange={handleChange}
