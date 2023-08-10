@@ -85,7 +85,7 @@ export const Works = () => {
           Web
         </button>
       </div>
-      <div className="overflow-auto max-h-[300px] mr-8">
+      <div className="overflow-auto max-h-[270px] mr-8 z-[-1]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pl-4 w-full">
           {all
             ? All[0].all.map((image) => (

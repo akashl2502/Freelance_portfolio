@@ -6,7 +6,7 @@ import { EffectCards, Autoplay } from "swiper/modules";
 import "../styles/card.css";
 export const Team = () => {
   return (
-    <section id="team" className="h-screen pt-10 ">
+    <section id="team" className="h-screen pt-5 max-sm:pt-10 ">
       <div className="h-[10%] container mx-auto w-full pt-24 flex justify-center items-center flex-col gap-1">
         <p className="text-[2.9rem] mfont font-light uppercase tracking-widest max-sm:text-[2rem]">
           <span>Our</span> <span className="text-[#f87c44]">TEAM</span>
