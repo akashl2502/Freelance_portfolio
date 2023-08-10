@@ -1,6 +1,46 @@
-import React from "react";
-
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import { toast, Toaster } from "react-hot-toast";
 const Contact = () => {
+  const [forms, setForms] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    setForms({
+      ...forms,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleSubmit = (e) => {
+    if ((forms.name && forms.email && forms.message).length != 0) {
+      const toastId = toast.loading("Sending Email...");
+
+      emailjs
+        .send("service_ff2sf71", "template_y8whfvk", forms, "ZcdMND3IohS_YDujI")
+        .then(
+          (result) => {
+            console.log(result.text);
+            toast.dismiss(toastId);
+            toast.success("Email Sent Succesfully 😀");
+            setForms({
+              name: "",
+              email: "",
+              message: "",
+            });
+          },
+          (error) => {
+            console.log(error.text);
+            toast.dismiss(toastId);
+            toast.error("Try again Later 😔");
+          }
+        );
+    } else if ((forms.name && forms.email && forms.message).length == 0) {
+      toast.error("Please Fill The Neccessary Details ☹️");
+    }
+  };
+
   return (
     <section id="contact" className="h-screen w-full bg-[#f2f2f2]">
       <div className="flex container mx-auto justify-center items-center h-full">
@@ -31,6 +71,9 @@ const Contact = () => {
                 data-aos-duration="600"
                 className="border rounded-lg w-full py-4 px-10 border-gray-300"
                 placeholder="Your Name"
+                name="name"
+                value={forms.name}
+                onChange={handleChange}
               />
             </div>
             <div className="w-[80%]">
@@ -41,6 +84,9 @@ const Contact = () => {
                 data-aos-duration="600"
                 className="border rounded-lg w-full py-4 px-10 border-gray-300"
                 placeholder="Email ID"
+                name="email"
+                value={forms.email}
+                onChange={handleChange}
               />
             </div>
             <div className="w-[80%]">
@@ -51,15 +97,23 @@ const Contact = () => {
                 data-aos-duration="600"
                 className="border rounded-lg w-full py-4 px-10 border-gray-300"
                 placeholder="Message"
+                name="message"
+                value={forms.message}
+                onChange={handleChange}
               />
             </div>
             <div className="w-[80%]">
-              <button className="border text-white mfont font-extrabold text-xl tracking-widest rounded-lg bg-[#f87c44] w-full py-4 px-10 border-gray-300 hover:border-2 hover:border-[#f87c44] hover:text-black hover:bg-white hover:transition-all hover:ease-in-out hover:duration-700">
+              <button
+                onClick={() => {
+                  handleSubmit();
+                }}
+                className="border text-white mfont font-extrabold text-xl tracking-widest rounded-lg bg-[#f87c44] w-full py-4 px-10 border-gray-300 hover:border-2 hover:border-[#f87c44] hover:text-black hover:bg-white hover:transition-all hover:ease-in-out hover:duration-700">
                 Submit
               </button>
             </div>
           </div>
         </div>
+        <Toaster position="bottom-center" reverseOrder="false" />
       </div>
     </section>
   );
