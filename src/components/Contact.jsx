@@ -15,13 +15,23 @@ const Contact = () => {
   };
   const handleSubmit = (e) => {
     if ((forms.name && forms.email && forms.message).length != 0) {
-      const toastId = toast.loading("Sending Email...");
+      const toastId = toast.loading("Sending Email... 🥳");
 
       emailjs
         .send("service_ff2sf71", "template_y8whfvk", forms, "ZcdMND3IohS_YDujI")
         .then(
           (result) => {
             console.log(result.text);
+            // {Autoreply mail}
+            // emailjs.send(
+            //   "service_ff2sf71",
+            //   "template_520qtbj",
+            //   {
+            //     email: forms.email,
+            //   },
+            //   "ZcdMND3IohS_YDujI"
+            // );
+            // {Autoreply mail}
             toast.dismiss(toastId);
             toast.success("Email Sent Succesfully 😀");
             setForms({
