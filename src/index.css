@@ -34,7 +34,28 @@
 
 @media only screen and (max-width: 767px) {
   [data-aos] {
-    opacity: 1 !important; /* Override AOS styles to show the element */
-    transform: none !important; /* Reset any translations, scales, etc. */
+    opacity: 1 !important;
+    transform: none !important;
   }
+}
+
+.glass-pane {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://img.freepik.com/free-photo/cheerful-young-entrepreneur_1098-18153.jpg?w=996&t=st=1691738242~exp=1691738842~hmac=7f194a92444dd39fcdb41de29ac8f79a4795958712581b2beccb283c2b3b13a8");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: auto;
+}
+
+.glass-pane::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 155, 106, 0.8);
 }

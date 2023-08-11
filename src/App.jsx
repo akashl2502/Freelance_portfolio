@@ -9,6 +9,7 @@ import Features from "./components/Features";
 import { Works } from "./components/Works";
 import { Team } from "./components/Team";
 import Contact from "./components/Contact";
+import { Info } from "./components/Info";
 
 function App() {
   return (
@@ -16,10 +17,13 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
+
       <Features />
+      <Info />
       <Works />
+
       <Team />
-      <Contact/>
+      <Contact />
     </div>
   );
 }
