@@ -1,28 +1,28 @@
 import React, { useState } from "react";
 
 export const Works = () => {
-  const [all, setAll] = useState(true);
+  const [all, setAll] = useState(false);
   const [app, setApp] = useState(false);
-  const [web, setWeb] = useState(false);
+  const [web, setWeb] = useState(true);
 
   const All = [
     {
-      all: [
-        "https://img.freepik.com/free-vector/workout-tracker-app-interface_23-2148653679.jpg?w=1060&t=st=1691502912~exp=1691503512~hmac=c7fe6bd30bfb48175beed08a8322bb5160f3561ec04c1ce08a5e55f0c6142942",
-        "https://img.freepik.com/premium-vector/hypertext-transfer-protocol-concept-http-data-web-page-web-browser-internet-communication-protocol-3d-vector-icon-cartoon-minimal-style_365941-790.jpg?w=740",
-      ],
+      all: Array(0)
+        .fill()
+        .map((_, i) => `/all/all(${i + 1}).jpeg`),
     },
     {
-      apps: [
-        "https://img.freepik.com/free-vector/workout-tracker-app-interface_23-2148653679.jpg?w=1060&t=st=1691502912~exp=1691503512~hmac=c7fe6bd30bfb48175beed08a8322bb5160f3561ec04c1ce08a5e55f0c6142942",
-      ],
+      apps: Array(4)
+        .fill()
+        .map((_, i) => `/app/app(${i + 1}).jpeg`),
     },
     {
-      webs: [
-        "https://img.freepik.com/premium-vector/hypertext-transfer-protocol-concept-http-data-web-page-web-browser-internet-communication-protocol-3d-vector-icon-cartoon-minimal-style_365941-790.jpg?w=740",
-      ],
+      webs: Array(10)
+        .fill()
+        .map((_, i) => `/web/web(${i + 1}).jpeg`),
     },
   ];
+  console.log(All[0].all);
 
   return (
     <section id="work" className="h-screen w-full  bg-[#f2f2f2] max-sm:pt-5">
@@ -61,7 +61,7 @@ export const Works = () => {
               ? "border-2 border-[#f87c44] bg-white text-[#f87c44]"
               : "text-white bg-[#f87c44] hover:border-2 hover:transition-all hover:ease-in-out hover:duration-300 hover:border-[#f87c44] hover:bg-white hover:text-[#f87c44]"
           }`}>
-          All
+          AI
         </button>
         <button
           onClick={() => {
@@ -94,20 +94,24 @@ export const Works = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pl-4 w-full">
           {all
             ? All[0].all.map((image) => (
-                <div className=" rounded  overflow-hidden">
-                  <img src={image} className="w-full h-auto" />
+                <div className="rounded overflow-hidden">
+                  <img
+                    src={image}
+                    alt="Description"
+                    className="w-full h-[200px] rounded-md object-contain"
+                  />
                 </div>
               ))
             : app
             ? All[1].apps.map((image) => (
-                <div className=" rounded overflow-hidden">
-                  <img src={image} className="w-full h-auto" />
+                <div className="rounded overflow-hidden">
+                  <img src={image} className="w-full object-contain aspect-square  rounded-md" />
                 </div>
               ))
             : web
             ? All[2].webs.map((image) => (
                 <div className=" rounded overflow-hidden">
-                  <img src={image} className="w-full h-auto" />
+                  <img src={image} className="w-full h-[200px] rounded-md" />
                 </div>
               ))
             : null}

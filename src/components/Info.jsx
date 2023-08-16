@@ -4,10 +4,10 @@ import { FaUserSecret } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 export const Info = () => {
   return (
-    <div className="h-[50vh] mt-10">
+    <div className="h-[50vh] mt-10 max-sm:h-[70vh]">
       <div className="h-full w-full">
         <div className="h-full w-full glass-pane relative">
-          <div className="flex justify-evenly items-center h-full absolute w-full">
+          <div className="flex justify-evenly items-center h-full absolute w-full max-sm:flex-col">
             <div className="flex justify-center items-center gap-5">
               <div className="flex flex-col gap-1 text-center">
                 <div>

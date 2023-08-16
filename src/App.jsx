@@ -17,11 +17,9 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
-
       <Features />
       <Info />
       <Works />
-
       <Team />
       <Contact />
     </div>

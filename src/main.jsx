@@ -4,6 +4,8 @@ import App from "./App.jsx";
 import "./index.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Routing from "./Route/Routing.jsx";
+
 AOS.init({
   duration: 2000,
   easing: "ease-in-sine",
@@ -14,6 +16,6 @@ AOS.init({
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <Routing />
   </React.StrictMode>
 );

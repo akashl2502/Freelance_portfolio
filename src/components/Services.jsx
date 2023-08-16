@@ -5,6 +5,7 @@ import { FaGamepad } from "react-icons/fa";
 import { MdGraphicEq } from "react-icons/md";
 import { RxDimensions } from "react-icons/rx";
 import { FaRobot } from "react-icons/fa";
+
 export default function Services() {
   const arr = [
     {

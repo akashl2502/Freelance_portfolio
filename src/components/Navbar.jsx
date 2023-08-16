@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../assets/1.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,13 +10,17 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-10 bg-white shadow-md p-4 mt-0 w-full">
-      <div className="container mx-auto flex  items-center justify-between max-md:justify-start">
+    <nav className="sticky top-0 z-10 bg-white shadow-md  mt-0 w-full">
+      <div className="container mx-auto flex  items-center justify-evenly max-md:justify-start">
         <div className="flex items-center  max-sm:justify-evenly max-sm:w-full">
           <a
             href="#"
-            className="text-2xl  text-[#f87c44] font-extrabold tracking-widest">
-            <i className="em em-grinning">👻</i>LC
+            className="text-2xl  text-[#f87c44] mfont font-extrabold tracking-widest">
+            <p className="flex justify-center items-center gap-5">
+              {" "}
+              <img className="scale-150 h-24 " src={logo} />
+              {/* <span className="text-sm max-sm:text-sm">Kindman Creations</span> */}
+            </p>
           </a>
           <button className="p-2 md:hidden " onClick={toggleMenu}>
             {isOpen ? <FaTimes color="black" /> : <FaBars color="black" />}
