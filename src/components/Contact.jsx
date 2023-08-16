@@ -18,7 +18,7 @@ const Contact = () => {
       const toastId = toast.loading("Sending Email... 🥳");
 
       emailjs
-        .send("service_ff2sf71", "template_y8whfvk", forms, "ZcdMND3IohS_YDujI")
+        .send("service_joc5k0s", "template_gn65prg", forms, "6VpKrZpnP_4X0VJi9")
         .then(
           (result) => {
             console.log(result.text);
@@ -61,7 +61,8 @@ const Contact = () => {
               data-aos-offset="200"
               data-aos-easing="ease-in-sine"
               data-aos-duration="600"
-              className="text-[2.5rem] mfont font-light uppercase tracking-widest max-sm:text-[2rem]">
+              className="text-[2.5rem] mfont font-light uppercase tracking-widest max-sm:text-[2rem]"
+            >
               <span>Contact</span> <span className="text-[#f87c44]">Us</span>
             </p>
             <div className="flex justify-center items-center ">
@@ -105,7 +106,8 @@ const Contact = () => {
                 onClick={() => {
                   handleSubmit();
                 }}
-                className="border text-white mfont font-extrabold text-xl tracking-widest rounded-lg bg-[#f87c44] w-full py-4 px-10 border-gray-300 hover:border-2 hover:border-[#f87c44] hover:text-black hover:bg-white hover:transition-all hover:ease-in-out hover:duration-700">
+                className="border text-white mfont font-extrabold text-xl tracking-widest rounded-lg bg-[#f87c44] w-full py-4 px-10 border-gray-300 hover:border-2 hover:border-[#f87c44] hover:text-black hover:bg-white hover:transition-all hover:ease-in-out hover:duration-700"
+              >
                 Submit
               </button>
             </div>
