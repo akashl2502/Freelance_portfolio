@@ -7,9 +7,9 @@ export const Works = () => {
 
   const All = [
     {
-      all: Array(0)
+      all: Array(1)
         .fill()
-        .map((_, i) => `/all/all(${i + 1}).jpeg`),
+        .map((_, i) => `/all/ml(${i + 1}).jpeg`),
     },
     {
       apps: Array(4)

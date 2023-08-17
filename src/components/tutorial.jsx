@@ -1,71 +1,25 @@
-import React, { useState } from 'react';
-
-function SignupForm() {
-  const [formData, setFormData] = useState({
-    email: '',
-    password: ''
-  });
-  const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({ ...prevState, [name]: value }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const validationErrors = validate(formData);
-    if (Object.keys(validationErrors).length === 0) {
-      setIsSubmitting(true);
-      try {
-        await checkEmailUnique(formData.email);
-        console.log("Form data submitted:", formData);
-      } catch (error) {
-        setErrors({ email: error });
-      }
-      setIsSubmitting(false);
-    } else {
-      setErrors(validationErrors);
-    }
-  };
-
-  const validate = (data) => {
-    const validationErrors = {};
-    if (!data.email) validationErrors.email = "Email is required";
-    if (!data.password) validationErrors.password = "Password is required";
-    return validationErrors;
-  };
-
-  return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Email:</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            disabled={isSubmitting}
-          />
-          {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
-        </div>
-        <div>
-          <label>Password:</label>
-          <input
-            type="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-            disabled={isSubmitting}
-          />
-          {errors.password && <p style={{ color: 'red' }}>{errors.password}</p>}
-        </div>
-        <button type="submit" disabled={isSubmitting}>Signup</button>
-      </form>
-    </div>
-  );
+// Some async function to fetch user data
+function fetchUserData(userId) {
+  return fetch(`/api/users/${userId}`).then(res => res.json());
 }
 
-export default SignupForm;
+// Create the fetcher
+const userDataFetcher = createFetcher(() => fetchUserData(123));
+
+function UserProfile() {
+  // This will either:
+  // 1. "Suspend" and cause the nearest Suspense boundary to show a fallback
+  // 2. Throw an error, which could be caught by an error boundary
+  // 3. Return the user data
+  const user = userDataFetcher.read();
+
+  return <div>{user.name}</div>;
+}
+
+function App() {
+  return (
+      <Suspense fallback={<div>Loading...</div>}>
+          <UserProfile />
+      </Suspense>
+  );
+}
