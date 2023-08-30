@@ -93,7 +93,7 @@ const Navbar = () => {
               Works
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               className="inline-block py-2 px-4 text-gray-600 no-underline cursor-pointer hover:text-black underline-animation"
               to="team"
@@ -107,7 +107,7 @@ const Navbar = () => {
               spyThrottle={500}>
               Team
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               className="inline-block py-2 px-4 text-gray-600 no-underline cursor-pointer hover:text-black underline-animation"

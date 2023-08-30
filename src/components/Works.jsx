@@ -98,20 +98,26 @@ export const Works = () => {
                   <img
                     src={image}
                     alt="Description"
-                    className="w-full h-[200px] rounded-md object-contain"
+                    className="w-full h-[200px] rounded-md object-contain pointer-events-none"
                   />
                 </div>
               ))
             : app
             ? All[1].apps.map((image) => (
                 <div className="rounded overflow-hidden">
-                  <img src={image} className="w-full object-contain aspect-square  rounded-md" />
+                  <img
+                    src={image}
+                    className="w-full object-contain aspect-square  rounded-md pointer-events-none"
+                  />
                 </div>
               ))
             : web
             ? All[2].webs.map((image) => (
                 <div className=" rounded overflow-hidden">
-                  <img src={image} className="w-full h-[200px] rounded-md" />
+                  <img
+                    src={image}
+                    className="w-full h-[200px] rounded-md pointer-events-none"
+                  />
                 </div>
               ))
             : null}

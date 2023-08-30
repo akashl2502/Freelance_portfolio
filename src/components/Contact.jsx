@@ -54,7 +54,7 @@ const Contact = () => {
   return (
     <section id="contact" className="h-screen w-full bg-[#f2f2f2]">
       <div className="flex container mx-auto justify-center items-center h-full">
-        <div className="h-[600px] w-[850px] bg-white ">
+        <div className="h-[600px] w-[850px] bg-white  ">
           <div className="h-[10%] w-full pt-24 flex justify-center items-center flex-col">
             <p
               data-aos="fade-up"

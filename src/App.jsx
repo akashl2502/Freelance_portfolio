@@ -10,6 +10,7 @@ import { Works } from "./components/Works";
 import { Team } from "./components/Team";
 import Contact from "./components/Contact";
 import { Info } from "./components/Info";
+import Single from "./components/Single";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       <Features />
       <Info />
       <Works />
-      <Team />
+      {/* <Team /> */}
       <Contact />
     </div>
   );

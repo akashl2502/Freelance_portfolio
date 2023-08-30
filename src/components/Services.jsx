@@ -5,7 +5,10 @@ import { FaGamepad } from "react-icons/fa";
 import { MdGraphicEq } from "react-icons/md";
 import { RxDimensions } from "react-icons/rx";
 import { FaRobot } from "react-icons/fa";
-
+import { HiSpeakerphone } from "react-icons/hi";
+import { MdContentPasteSearch } from "react-icons/md";
+import { SlSocialInstagram } from "react-icons/sl";
+import { TbSeo } from "react-icons/tb";
 export default function Services() {
   const arr = [
     {
@@ -21,30 +24,37 @@ export default function Services() {
       sub: "Using the latest web technologies and frameworks, we deliver high-performance web solutions that enhance your online presence.",
     },
     {
-      id: "game",
-      icon: <FaGamepad size={30} color="#f87c44" />,
-      heading: "Game Development",
-      sub: "Our game development team combines creativity and technical expertise to design high-quality games across multiple platforms.",
+      id: "digital_marketing",
+      icon: <HiSpeakerphone size={30} color="#f87c44" />,
+      heading: "Digital Marketing",
+      sub: "Our Digital marketing team employs innovative strategies to enhance your online presence and reach your target audience effectively.",
     },
 
     {
-      id: "graphic",
-      icon: <MdGraphicEq size={30} color="#f87c44" />,
-      heading: "Graphic Designing",
-      sub: "We offer creative graphic design solutions that effectively communicate your brand's message and resonate with your target audience.",
+      id: "social_media",
+      icon: <SlSocialInstagram size={30} color="#f87c44" />, // Assuming you'd want to use the FaRegThumbsUp icon as a representation for social media; otherwise, you'd choose an appropriate icon for social media management.
+      heading: "Social Media Management",
+      sub: "Our Team specializes in crafting and executing effective social media strategies to amplify your online presence and engage your audience.",
     },
     {
-      id: "3D Modelling",
-      icon: <RxDimensions size={30} color="#f87c44" />,
-      heading: "3D-Modelling",
-      sub: "From architectural renderings to product prototypes, our 3D modeling services help visualize your ideas with precision and detail.",
+      id: "seo",
+      icon: <TbSeo size={30} color="#f87c44" />, // Assuming you'd want to use the FaSearchDollar icon as a representation for SEO; otherwise, you'd choose an appropriate icon for SEO.
+      heading: "SEO",
+      sub: "Boost your website's visibility and rank higher on search engines with our comprehensive SEO strategies and techniques.",
     },
     {
-      id: "AI Development",
-      icon: <FaRobot size={30} color="#f87c44" />,
-      heading: "AI Development",
-      sub: "We offer cutting-edge AI solutions that empower businesses, optimize processes, and deliver superior customer experiences.",
+      id: "content_creation",
+      icon: <MdContentPasteSearch size={30} color="#f87c44" />, // Assuming you'd want to use a hypothetical TbContentCreation icon as a representation for Content Creation; you'd need to replace this with an appropriate icon if it doesn't exist.
+      heading: "Content Creation",
+      sub: "Elevate your brand's voice with compelling and authentic content crafted by our dedicated content creation team.",
     },
+
+    // {
+    //   id: "AI Development",
+    //   icon: <FaRobot size={30} color="#f87c44" />,
+    //   heading: "AI Development",
+    //   sub: "We offer cutting-edge AI solutions that empower businesses, optimize processes, and deliver superior customer experiences.",
+    // },
   ];
 
   return (

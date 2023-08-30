@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import App from "../App";
 import SplashScreen from "../components/SplashScreen";
+import Single from "../components/Single";
 
 const Routing = () => {
   return (

@@ -80,3 +80,11 @@
 
   height: calc(100% * (9 / 16));
 }
+
+::selection {
+  display: none;
+}
+
+img::selection {
+  pointer-events: none;
+}

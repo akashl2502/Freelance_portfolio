@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "../App.css";
+import "./hero.css";
 import img1 from "../assets/img1.jpg";
 import img2 from "../assets/img2.jpg";
 import img3 from "../assets/img3.jpg";
