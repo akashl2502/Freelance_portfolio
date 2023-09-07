@@ -113,7 +113,7 @@ function Hero() {
               Innovation Begins Here <br />
               Get to Know Our Crystal Team
             </p>
-            <div className="absolute font-light mfont top-0 left-0 bottom-0 right-0 flex items-end w-full justify-center h-[85%] ">
+            <div className="absolute   font-light mfont top-0 left-0 bottom-0 right-0 flex items-end w-full justify-center h-[85%] ">
               <Link
                 className="inline-block py-2 px-4 text-gray-600 no-underline cursor-pointer"
                 spy={true}

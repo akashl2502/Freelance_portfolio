@@ -21,7 +21,7 @@ function App() {
       <Features />
       <Info />
       <Works />
-      {/* <Team /> */}
+      <Team />
       <Contact />
     </div>
   );
